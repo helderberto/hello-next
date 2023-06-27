@@ -1,13 +1,20 @@
-import React from "react";
-import Censored from "../components/Censored";
-import HitCounter from "../components/HitCounter/HitCounter";
+import React from 'react';
+
+import MainWrapper from '../components/MainWrapper';
+import Censored from '../components/Censored';
+import HitCounter from '../components/HitCounter';
 
 function Home() {
   return (
-    <main>
-      <h1>Welcome</h1>
+    <MainWrapper>
+      <h1>
+        Exploring the trade-offs with half-gauge
+        vs. full-gauge wire in laminated
+        woodworking
+      </h1>
+      <h2>By Saanvi Agarwal and Vera Chauhan</h2>
       <p>You are visitor number <Censored><HitCounter /></Censored>.</p>
-    </main>
+    </MainWrapper>
   );
 }
 
